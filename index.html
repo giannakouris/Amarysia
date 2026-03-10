@@ -1,0 +1,762 @@
+<!doctype html>
+<html lang="en" class="h-full">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Amarysia Ship Services S.A. — Maritime Fumigation &amp; Hygiene</title>
+  <meta name="description" content="Professional maritime fumigation, vessel hygiene audits, and sanitation advisory services in Esmeraldas, Ecuador. Ensuring compliant, safe, and pest-free vessel operations.">
+  <script src="https://cdn.tailwindcss.com/3.4.17"></script>
+  <script src="https://cdn.jsdelivr.net/npm/lucide@0.263.0/dist/umd/lucide.min.js"></script>
+  <script src="/_sdk/element_sdk.js"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&amp;display=swap" rel="stylesheet">
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            navy: '#0f1b2e',
+            'navy-light': '#1a2f47',
+            'navy-dark': '#050f1a',
+            emerald: '#10b981',
+            'emerald-dark': '#059669',
+            teal: '#14b8a6',
+            cyan: '#06b6d4',
+          },
+          fontFamily: {
+            poppins: ['Poppins', 'sans-serif'],
+          }
+        }
+      }
+    }
+  </script>
+  <style>
+    html { scroll-behavior: smooth; }
+    body { font-family: 'Poppins', sans-serif; }
+    
+    .hero-gradient {
+      background: linear-gradient(180deg, #0a1628 0%, #0f1f35 50%, #051221 100%);
+    }
+    
+    .card-hover {
+      transition: all 0.4s cubic-bezier(0.35, 0, 0.15, 1);
+    }
+    .card-hover:hover {
+      transform: translateY(-6px);
+      box-shadow: 0 20px 40px rgba(10, 37, 64, 0.2);
+    }
+    
+    .btn-primary {
+      transition: all 0.3s ease;
+      letter-spacing: 0.3px;
+    }
+    .btn-primary:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 12px 24px rgba(16, 185, 129, 0.25);
+    }
+    
+    .nav-link {
+      position: relative;
+      font-weight: 500;
+      letter-spacing: 0.2px;
+    }
+    .nav-link::after {
+      content: '';
+      position: absolute;
+      bottom: -4px;
+      left: 0;
+      width: 0;
+      height: 2px;
+      background: #14b8a6;
+      transition: width 0.3s ease;
+    }
+    .nav-link:hover::after {
+      width: 100%;
+    }
+    
+    .nav-link-btn {
+      transition: all 0.3s ease;
+      letter-spacing: 0.3px;
+    }
+    .nav-link-btn:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 10px 20px rgba(16, 185, 129, 0.3);
+    }
+    
+    .glass-effect {
+      background: rgba(15, 27, 46, 0.95);
+      backdrop-filter: blur(10px);
+      border: 1px solid rgba(20, 184, 166, 0.1);
+    }
+    
+    .stat-card {
+      position: relative;
+      overflow: hidden;
+      transition: all 0.4s ease;
+    }
+    .stat-card::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: -100%;
+      width: 100%;
+      height: 100%;
+      background: linear-gradient(90deg, transparent, rgba(20, 184, 166, 0.1), transparent);
+      transition: left 0.6s ease;
+    }
+    .stat-card:hover::before {
+      left: 100%;
+    }
+    
+    .section-title {
+      position: relative;
+      display: inline-block;
+      font-size: 2.25rem;
+      font-weight: 700;
+      letter-spacing: -0.5px;
+    }
+    
+    .service-icon {
+      position: relative;
+      width: 64px;
+      height: 64px;
+      border-radius: 12px;
+      background: linear-gradient(135deg, #10b981 0%, #059669 100%);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: all 0.4s ease;
+    }
+    .card-hover:hover .service-icon {
+      transform: scale(1.1) rotateY(10deg);
+    }
+    
+    .floating-btn {
+      transition: all 0.3s ease;
+    }
+    .floating-btn:hover {
+      transform: scale(1.1);
+      box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
+    }
+    
+    .feature-list {
+      list-style: none;
+      padding: 0;
+    }
+    .feature-list li {
+      padding: 0.75rem 0;
+      padding-left: 2rem;
+      position: relative;
+      color: #666;
+      line-height: 1.6;
+    }
+    .feature-list li::before {
+      content: '';
+      position: absolute;
+      left: 0;
+      top: 50%;
+      transform: translateY(-50%);
+      width: 6px;
+      height: 6px;
+      background: #14b8a6;
+      border-radius: 50%;
+    }
+    
+    .divider {
+      height: 1px;
+      background: linear-gradient(90deg, transparent, #e5e7eb, transparent);
+    }
+  </style>
+  <style>body { box-sizing: border-box; }</style>
+  <script src="/_sdk/data_sdk.js" type="text/javascript"></script>
+ </head>
+ <body class="h-full bg-white">
+  <div id="app-container" class="w-full h-full overflow-auto"><!-- Fixed Navigation -->
+   <nav id="navbar" class="fixed top-0 left-0 right-0 z-50 transition-all duration-300 bg-transparent">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+     <div class="flex justify-between items-center h-20">
+      <div class="flex items-center gap-3">
+       <a href="#home" class="flex items-center gap-3 group cursor-pointer">
+        <div>
+         <svg class="w-10 h-10" viewbox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M32 4L52 14V32C52 45 32 58 32 58C32 58 12 45 12 32V14L32 4Z" fill="#22c55e" opacity="0.9" /> <path d="M32 8L50 17V32C50 42 32 54 32 54C32 54 14 42 14 32V17L32 8Z" fill="#16a34a" /> <path d="M28 30L32 20L36 30M29 35H35" stroke="#ffffff" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" fill="none" />
+         </svg>
+        </div>
+        <div><span id="nav-logo-text" class="text-xl font-bold text-white group-hover:text-emerald transition-colors">Amarysia</span> <span class="block text-xs text-emerald font-medium -mt-1">Ship Services S.A.</span>
+        </div></a>
+      </div>
+      <div class="hidden md:flex items-center gap-8">
+       <a href="#home" class="nav-link text-emerald hover:text-teal font-medium transition-colors">Home</a> <a href="#about" class="nav-link text-emerald hover:text-teal font-medium transition-colors">About</a> <a href="#services" class="nav-link text-emerald hover:text-teal font-medium transition-colors">Services</a> <a href="#contact" class="nav-link-btn inline-flex items-center gap-2 bg-emerald hover:bg-teal text-white font-semibold px-6 py-2.5 rounded-lg transition-all hover:shadow-lg hover:-translate-y-0.5"> <i data-lucide="phone" class="w-4 h-4"></i> Contact </a>
+      </div><button id="mobile-menu-btn" class="md:hidden text-white p-2 hover:bg-white/10 rounded-lg transition-colors"> <i data-lucide="menu" class="w-6 h-6"></i> </button>
+     </div>
+    </div><!-- Mobile Menu -->
+    <div id="mobile-menu" class="hidden md:hidden glass-effect border-t border-gray-100 shadow-lg">
+     <div class="px-4 py-4 space-y-2">
+      <a href="#home" class="block text-emerald font-medium py-3 px-3 rounded-lg hover:bg-emerald/10 transition-colors">Home</a> <a href="#about" class="block text-emerald font-medium py-3 px-3 rounded-lg hover:bg-emerald/10 transition-colors">About</a> <a href="#services" class="block text-emerald font-medium py-3 px-3 rounded-lg hover:bg-emerald/10 transition-colors">Services</a> <a href="#contact" class="flex items-center gap-2 w-full text-white font-semibold py-3 px-3 rounded-lg bg-emerald hover:bg-teal transition-all text-center justify-center"> <i data-lucide="phone" class="w-4 h-4"></i> Contact </a>
+     </div>
+    </div>
+   </nav><!-- Hero Section -->
+   <section id="home" class="hero-gradient min-h-screen flex items-center relative overflow-hidden">
+    <div class="absolute inset-0 overflow-hidden">
+     <div class="absolute -top-40 -right-40 w-96 h-96 bg-emerald/5 rounded-full blur-3xl"></div>
+     <div class="absolute -bottom-40 -left-40 w-96 h-96 bg-teal/5 rounded-full blur-3xl"></div>
+    </div>
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-32 relative z-10">
+     <div class="grid lg:grid-cols-2 gap-16 items-center">
+      <div class="text-left">
+       <div class="inline-flex items-center gap-3 bg-emerald/10 backdrop-blur px-4 py-2.5 rounded-full mb-8">
+        <div class="w-2 h-2 bg-emerald rounded-full"></div><span class="text-emerald text-sm font-semibold tracking-wide">Industry Leading Since 2010</span>
+       </div>
+       <h1 id="hero-headline" class="text-5xl lg:text-6xl font-bold text-white leading-tight mb-6 tracking-tight">Professional Maritime Fumigation &amp; Vessel Hygiene</h1>
+       <p id="hero-subheadline" class="text-lg text-white/75 mb-10 leading-relaxed max-w-xl">ISO-certified treatments and comprehensive sanitation advisory. Trusted by regional and international operators for compliant, safe vessel operations.</p>
+       <div class="flex flex-col sm:flex-row gap-4 mb-12"><a href="#contact" class="btn-primary inline-flex items-center justify-center gap-2 bg-emerald hover:bg-emerald-dark text-white font-semibold px-8 py-4 rounded-lg"> <i data-lucide="phone" class="w-5 h-5"></i> Request Consultation </a> <a href="#services" class="inline-flex items-center justify-center gap-2 border-2 border-white/20 hover:border-teal text-white font-semibold px-8 py-4 rounded-lg transition-all"> <i data-lucide="arrow-right" class="w-5 h-5"></i> Explore Services </a>
+       </div>
+       <div class="grid grid-cols-3 gap-4 pt-8 border-t border-white/10">
+        <div class="stat-card">
+         <div class="text-3xl font-bold text-emerald">
+          15+
+         </div>
+         <div class="text-white/60 text-sm font-medium mt-2">
+          Years Experience
+         </div>
+        </div>
+        <div class="stat-card">
+         <div class="text-3xl font-bold text-emerald">
+          500+
+         </div>
+         <div class="text-white/60 text-sm font-medium mt-2">
+          Vessels Serviced
+         </div>
+        </div>
+        <div class="stat-card">
+         <div class="text-3xl font-bold text-emerald">
+          100%
+         </div>
+         <div class="text-white/60 text-sm font-medium mt-2">
+          Compliance Rate
+         </div>
+        </div>
+       </div>
+      </div>
+      <div class="hidden lg:flex flex-col items-center justify-center">
+       <div class="relative w-full max-w-md">
+        <div class="absolute inset-0 bg-gradient-to-br from-emerald/20 to-teal/20 rounded-2xl blur-2xl"></div>
+        <div class="relative bg-white/5 backdrop-blur border border-white/10 rounded-2xl p-12">
+         <div class="grid grid-cols-2 gap-6">
+          <div class="flex flex-col items-center gap-3 p-4 rounded-xl bg-white/5 border border-white/5 hover:border-emerald/30 transition-all">
+           <i data-lucide="shield-check" class="w-8 h-8 text-emerald"></i> <span class="text-white text-sm font-semibold text-center">ISO Certified</span>
+          </div>
+          <div class="flex flex-col items-center gap-3 p-4 rounded-xl bg-white/5 border border-white/5 hover:border-emerald/30 transition-all">
+           <i data-lucide="award" class="w-8 h-8 text-emerald"></i> <span class="text-white text-sm font-semibold text-center">IMO Approved</span>
+          </div>
+          <div class="flex flex-col items-center gap-3 p-4 rounded-xl bg-white/5 border border-white/5 hover:border-emerald/30 transition-all">
+           <i data-lucide="zap" class="w-8 h-8 text-teal"></i> <span class="text-white text-sm font-semibold text-center">24/7 Support</span>
+          </div>
+          <div class="flex flex-col items-center gap-3 p-4 rounded-xl bg-white/5 border border-white/5 hover:border-emerald/30 transition-all">
+           <i data-lucide="map-pin" class="w-8 h-8 text-teal"></i> <span class="text-white text-sm font-semibold text-center">Ecuador Hub</span>
+          </div>
+         </div>
+         <div class="mt-8 pt-8 border-t border-white/10">
+          <p class="text-white/60 text-xs text-center leading-relaxed">Serving Esmeraldas Port and regional Pacific maritime operations with specialized fumigation and sanitation protocols.</p>
+         </div>
+        </div>
+       </div>
+      </div>
+     </div>
+    </div>
+   </section><!-- About Section -->
+   <section id="about" class="py-24 bg-gray-50">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+     <div class="grid lg:grid-cols-2 gap-16 items-center">
+      <div>
+       <div class="inline-flex items-center gap-2 bg-emerald/10 px-4 py-2 rounded-full mb-6"><i data-lucide="anchor" class="w-4 h-4 text-emerald"></i> <span class="text-emerald text-sm font-semibold">About Our Company</span>
+       </div>
+       <h2 id="about-title" class="text-4xl font-bold text-navy mb-6">Trusted Maritime Hygiene Experts in Ecuador</h2>
+       <p id="company-description" class="text-gray-600 text-lg mb-6 leading-relaxed">Amarysia Ship Services S.A. has been providing exceptional maritime fumigation and sanitation services since 2010. Based in Esmeraldas, Ecuador, we serve vessels of all types with internationally certified treatments and comprehensive hygiene solutions.</p>
+       <p class="text-gray-600 mb-8 leading-relaxed">Our team of certified professionals combines decades of maritime experience with cutting-edge fumigation technologies to ensure your vessels meet and exceed international health and safety standards.</p>
+       <div class="grid sm:grid-cols-3 gap-6">
+        <div class="p-5 bg-white rounded-xl border border-gray-100 hover:border-emerald/30 transition-all">
+         <div class="w-12 h-12 bg-emerald/10 rounded-lg flex items-center justify-center mb-3"><i data-lucide="target" class="w-6 h-6 text-emerald"></i>
+         </div>
+         <h4 class="font-semibold text-navy text-sm">Mission</h4>
+         <p class="text-xs text-gray-500 mt-2">Excellence in maritime hygiene</p>
+        </div>
+        <div class="p-5 bg-white rounded-xl border border-gray-100 hover:border-emerald/30 transition-all">
+         <div class="w-12 h-12 bg-emerald/10 rounded-lg flex items-center justify-center mb-3"><i data-lucide="eye" class="w-6 h-6 text-emerald"></i>
+         </div>
+         <h4 class="font-semibold text-navy text-sm">Vision</h4>
+         <p class="text-xs text-gray-500 mt-2">Leading Latin American provider</p>
+        </div>
+        <div class="p-5 bg-white rounded-xl border border-gray-100 hover:border-emerald/30 transition-all">
+         <div class="w-12 h-12 bg-emerald/10 rounded-lg flex items-center justify-center mb-3"><i data-lucide="heart" class="w-6 h-6 text-emerald"></i>
+         </div>
+         <h4 class="font-semibold text-navy text-sm">Values</h4>
+         <p class="text-xs text-gray-500 mt-2">Safety, integrity, reliability</p>
+        </div>
+       </div>
+      </div>
+      <div class="relative">
+       <div class="bg-gradient-to-br from-navy to-navy-dark rounded-2xl p-8 relative overflow-hidden h-96 flex items-center justify-center">
+        <div class="absolute inset-0 flex items-center justify-center">
+         <div class="text-center">
+          <i data-lucide="ship-2" class="w-32 h-32 text-emerald/30 mx-auto mb-4"></i>
+          <p class="text-white/40 text-sm font-medium">Professional Maritime Operations</p>
+         </div>
+        </div>
+       </div>
+       <div class="absolute -bottom-6 -left-6 bg-white p-4 rounded-xl shadow-xl border border-gray-100">
+        <div class="flex items-center gap-3">
+         <div class="w-12 h-12 bg-emerald rounded-lg flex items-center justify-center"><i data-lucide="award" class="w-6 h-6 text-white"></i>
+         </div>
+         <div>
+          <div class="font-bold text-navy">
+           15+ Years
+          </div>
+          <div class="text-xs text-gray-500">
+           Industry Excellence
+          </div>
+         </div>
+        </div>
+       </div>
+      </div>
+     </div>
+    </div>
+   </section><!-- Services Section -->
+   <section id="services" class="py-24 bg-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+     <div class="text-center max-w-3xl mx-auto mb-16">
+      <div class="inline-flex items-center gap-2 bg-emerald/10 px-4 py-2 rounded-full mb-6"><i data-lucide="settings" class="w-4 h-4 text-emerald"></i> <span class="text-emerald text-sm font-semibold">Our Services</span>
+      </div>
+      <h2 id="services-title" class="text-4xl font-bold text-navy mb-6">Comprehensive Maritime Hygiene Solutions</h2>
+      <p class="text-gray-600 text-lg leading-relaxed">We provide end-to-end fumigation, pest control, and sanitation services for all types of vessels, ensuring compliance with international maritime regulations.</p>
+     </div>
+     <div class="grid md:grid-cols-3 gap-8 mb-16"><!-- Service 1: Vessel Fumigation -->
+      <div class="card-hover bg-white border border-gray-100 rounded-xl p-8 shadow-sm hover:shadow-lg">
+       <div class="service-icon mb-6"></div>
+       <h3 class="text-lg font-bold text-navy mb-4">Vessel Fumigation Services</h3>
+       <p class="text-gray-600 mb-6 text-sm leading-relaxed">Certified fumigation treatments for tankers, cargo ships, and bulk carriers. We use internationally approved methods and chemicals to eliminate pests effectively.</p>
+       <ul class="feature-list mb-6">
+        <li class="text-sm">Phosphine gas treatments</li>
+        <li class="text-sm">Methyl bromide alternatives</li>
+        <li class="text-sm">Cargo hold fumigation</li>
+        <li class="text-sm">Full vessel treatments</li>
+       </ul><a href="#contact" class="inline-flex items-center gap-2 text-emerald font-semibold text-sm hover:gap-3 transition-all"> Learn More <i data-lucide="arrow-right" class="w-4 h-4"></i> </a>
+      </div><!-- Service 2: Pest Hygiene Audits -->
+      <div class="card-hover bg-white border border-gray-100 rounded-xl p-8 shadow-sm hover:shadow-lg">
+       <div class="service-icon mb-6"></div>
+       <h3 class="text-lg font-bold text-navy mb-4">Pest Hygiene Audits</h3>
+       <p class="text-gray-600 mb-6 text-sm leading-relaxed">Comprehensive inspections and detailed reporting with mitigation recommendations. Our audits help you identify and address pest risks before they become problems.</p>
+       <ul class="feature-list mb-6">
+        <li class="text-sm">Full vessel inspections</li>
+        <li class="text-sm">Detailed pest reports</li>
+        <li class="text-sm">Risk assessments</li>
+        <li class="text-sm">Compliance certification</li>
+       </ul><a href="#contact" class="inline-flex items-center gap-2 text-emerald font-semibold text-sm hover:gap-3 transition-all"> Learn More <i data-lucide="arrow-right" class="w-4 h-4"></i> </a>
+      </div><!-- Service 3: Sanitation Advisory -->
+      <div class="card-hover bg-white border border-gray-100 rounded-xl p-8 shadow-sm hover:shadow-lg">
+       <div class="service-icon mb-6"></div>
+       <h3 class="text-lg font-bold text-navy mb-4">Sanitation Advisory</h3>
+       <p class="text-gray-600 mb-6 text-sm leading-relaxed">Expert guidance on hygiene planning and compliance with international maritime health standards. We help you develop and maintain effective sanitation programs.</p>
+       <ul class="feature-list mb-6">
+        <li class="text-sm">Hygiene planning</li>
+        <li class="text-sm">SSCEC compliance</li>
+        <li class="text-sm">Crew training</li>
+        <li class="text-sm">Documentation support</li>
+       </ul><a href="#contact" class="inline-flex items-center gap-2 text-emerald font-semibold text-sm hover:gap-3 transition-all"> Learn More <i data-lucide="arrow-right" class="w-4 h-4"></i> </a>
+      </div>
+     </div><!-- CTA Banner -->
+     <div class="bg-gradient-to-r from-navy to-navy-dark rounded-2xl p-8 md:p-12 relative overflow-hidden">
+      <div class="absolute top-0 right-0 w-64 h-64 bg-emerald/10 rounded-full blur-3xl"></div>
+      <div class="relative z-10 flex flex-col md:flex-row items-center justify-between gap-6">
+       <div>
+        <h3 class="text-2xl md:text-3xl font-bold text-white mb-2">Emergency Fumigation Services Available</h3>
+        <p class="text-white/70 text-sm">Our team is available 24/7 for urgent maritime pest control needs</p>
+       </div><a href="https://wa.me/593969693131" target="_blank" rel="noopener noreferrer" class="btn-primary inline-flex items-center gap-2 bg-emerald hover:bg-emerald-dark text-white font-semibold px-8 py-4 rounded-lg whitespace-nowrap"> <i data-lucide="phone" class="w-5 h-5"></i> Call Now </a>
+      </div>
+     </div>
+    </div>
+   </section><!-- Contact Section -->
+   <section id="contact" class="py-24 bg-gray-50">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+     <div class="grid lg:grid-cols-2 gap-16">
+      <div>
+       <div class="inline-flex items-center gap-2 bg-emerald/10 px-4 py-2 rounded-full mb-6"><i data-lucide="mail" class="w-4 h-4 text-emerald"></i> <span class="text-emerald text-sm font-semibold">Contact Us</span>
+       </div>
+       <h2 id="contact-title" class="text-4xl font-bold text-navy mb-6">Get in Touch With Our Team</h2>
+       <p class="text-gray-600 text-lg mb-8 leading-relaxed">Have questions about our services? Need a quote for your vessel? Fill out the form and our maritime hygiene experts will respond within 24 hours.</p>
+       <div class="space-y-6">
+        <div class="flex items-start gap-4">
+         <div class="w-12 h-12 bg-emerald/10 rounded-lg flex items-center justify-center flex-shrink-0"><i data-lucide="map-pin" class="w-6 h-6 text-emerald"></i>
+         </div>
+         <div>
+          <h4 class="font-semibold text-navy text-sm">Location</h4>
+          <p class="text-gray-600 text-sm mt-1">Esmeraldas, Ecuador</p>
+         </div>
+        </div>
+        <div class="flex items-start gap-4">
+         <div class="w-12 h-12 bg-emerald/10 rounded-lg flex items-center justify-center flex-shrink-0"><i data-lucide="phone" class="w-6 h-6 text-emerald"></i>
+         </div>
+         <div>
+          <h4 class="font-semibold text-navy text-sm">Phone / WhatsApp</h4>
+          <p class="text-gray-600 text-sm mt-1">Click the button below →</p>
+         </div>
+        </div>
+        <div class="flex items-start gap-4">
+         <div class="w-12 h-12 bg-emerald/10 rounded-lg flex items-center justify-center flex-shrink-0"><i data-lucide="mail" class="w-6 h-6 text-emerald"></i>
+         </div>
+         <div>
+          <h4 class="font-semibold text-navy text-sm">Email</h4>
+          <p class="text-gray-600 text-sm mt-1">Use the form below</p>
+         </div>
+        </div>
+        <div class="flex items-start gap-4">
+         <div class="w-12 h-12 bg-emerald/10 rounded-lg flex items-center justify-center flex-shrink-0"><i data-lucide="clock" class="w-6 h-6 text-emerald"></i>
+         </div>
+         <div>
+          <h4 class="font-semibold text-navy text-sm">Availability</h4>
+          <p class="text-gray-600 text-sm mt-1">24/7 Emergency Services Available</p>
+         </div>
+        </div>
+       </div>
+      </div>
+      <div>
+       <form id="contact-form" class="bg-white rounded-xl p-8 shadow-sm border border-gray-100">
+        <div class="space-y-6">
+         <div><label for="name" class="block text-sm font-semibold text-navy mb-2">Full Name *</label> <input type="text" id="name" name="name" required class="w-full px-4 py-3 border border-gray-200 rounded-lg focus:ring-2 focus:ring-emerald focus:border-emerald outline-none transition-all text-sm" placeholder="John Smith">
+         </div>
+         <div><label for="email" class="block text-sm font-semibold text-navy mb-2">Email Address *</label> <input type="email" id="email" name="email" required class="w-full px-4 py-3 border border-gray-200 rounded-lg focus:ring-2 focus:ring-emerald focus:border-emerald outline-none transition-all text-sm" placeholder="john@example.com">
+         </div>
+         <div><label for="phone" class="block text-sm font-semibold text-navy mb-2">Phone Number *</label> <input type="tel" id="phone" name="phone" required class="w-full px-4 py-3 border border-gray-200 rounded-lg focus:ring-2 focus:ring-emerald focus:border-emerald outline-none transition-all text-sm" placeholder="+1 234 567 890">
+         </div>
+         <div><label for="message" class="block text-sm font-semibold text-navy mb-2">Message *</label> <textarea id="message" name="message" rows="4" required class="w-full px-4 py-3 border border-gray-200 rounded-lg focus:ring-2 focus:ring-emerald focus:border-emerald outline-none transition-all resize-none text-sm" placeholder="Tell us about your vessel and service needs..."></textarea>
+         </div><button type="submit" id="submit-btn" class="btn-primary w-full bg-emerald hover:bg-emerald-dark text-white font-semibold py-4 rounded-lg flex items-center justify-center gap-2 text-sm"> <i data-lucide="send" class="w-5 h-5"></i> Send Message </button>
+         <div id="form-status" class="hidden text-center py-3 rounded-lg text-sm"></div>
+        </div>
+       </form>
+      </div>
+     </div>
+    </div>
+   </section><!-- Footer -->
+   <footer class="bg-navy py-16">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+     <div class="grid md:grid-cols-4 gap-12 mb-12">
+      <div class="md:col-span-2">
+       <div class="flex items-center gap-3 mb-6">
+        <svg class="w-10 h-10" viewbox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+         <path d="M32 4L52 14V32C52 45 32 58 32 58C32 58 12 45 12 32V14L32 4Z" fill="#22c55e" opacity="0.9" /> <path d="M32 8L50 17V32C50 42 32 54 32 54C32 54 14 42 14 32V17L32 8Z" fill="#16a34a" /> <path d="M28 30L32 20L36 30M29 35H35" stroke="#ffffff" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" fill="none" />
+        </svg>
+        <div><span class="text-xl font-bold text-white">Amarysia</span> <span class="block text-xs text-emerald font-medium -mt-1">Ship Services S.A.</span>
+        </div>
+       </div>
+       <p id="footer-tagline" class="text-white/60 mb-6 max-w-md text-sm leading-relaxed">Your trusted partner for professional maritime fumigation, vessel hygiene audits, and sanitation advisory services in Ecuador and beyond.</p>
+       <div class="flex gap-4"><a href="https://wa.me/593969693131" target="_blank" rel="noopener noreferrer" class="w-10 h-10 bg-white/10 hover:bg-emerald rounded-full flex items-center justify-center transition-all">
+         <svg class="w-5 h-5 text-white" viewbox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z" />
+         </svg></a> <a href="https://www.facebook.com/profile.php?id=61576470584956" target="_blank" rel="noopener noreferrer" class="w-10 h-10 bg-white/10 hover:bg-emerald rounded-full flex items-center justify-center transition-all"> <i data-lucide="facebook" class="w-5 h-5 text-white"></i> </a> <a href="https://www.instagram.com/amarysia2/" target="_blank" rel="noopener noreferrer" class="w-10 h-10 bg-white/10 hover:bg-emerald rounded-full flex items-center justify-center transition-all"> <i data-lucide="instagram" class="w-5 h-5 text-white"></i> </a>
+       </div>
+      </div>
+      <div>
+       <h4 class="text-white font-semibold mb-6 text-sm">Quick Links</h4>
+       <ul class="space-y-3">
+        <li><a href="#home" class="text-white/60 hover:text-emerald transition-colors text-sm">Home</a></li>
+        <li><a href="#about" class="text-white/60 hover:text-emerald transition-colors text-sm">About Us</a></li>
+        <li><a href="#services" class="text-white/60 hover:text-emerald transition-colors text-sm">Services</a></li>
+        <li><a href="#contact" class="text-white/60 hover:text-emerald transition-colors text-sm">Contact</a></li>
+       </ul>
+      </div>
+      <div>
+       <h4 class="text-white font-semibold mb-6 text-sm">Services</h4>
+       <ul class="space-y-3">
+        <li><a href="#services" class="text-white/60 hover:text-emerald transition-colors text-sm">Vessel Fumigation</a></li>
+        <li><a href="#services" class="text-white/60 hover:text-emerald transition-colors text-sm">Pest Hygiene Audits</a></li>
+        <li><a href="#services" class="text-white/60 hover:text-emerald transition-colors text-sm">Sanitation Advisory</a></li>
+        <li><a href="#contact" class="text-white/60 hover:text-emerald transition-colors text-sm">Emergency Services</a></li>
+       </ul>
+      </div>
+     </div>
+     <div class="border-t border-white/10 pt-8 flex flex-col md:flex-row items-center justify-between gap-4">
+      <p class="text-white/40 text-xs">© 2024 Amarysia Ship Services S.A. All rights reserved.</p>
+      <p class="text-white/40 text-xs">Maritime Fumigation &amp; Hygiene Excellence</p>
+     </div>
+    </div>
+   </footer><!-- Floating Social Buttons -->
+   <div class="fixed bottom-6 right-6 flex flex-col gap-3 z-50">
+    <div id="whatsapp-menu" class="hidden absolute bottom-20 right-0 bg-white rounded-xl shadow-2xl p-4 w-56 space-y-2 border border-gray-100">
+     <p class="text-xs font-semibold text-navy px-2 py-1">Contact Team Member:</p><a href="https://wa.me/593969693131" target="_blank" rel="noopener noreferrer" class="flex items-center gap-3 p-3 hover:bg-green-50 rounded-lg transition-all">
+      <div class="w-10 h-10 bg-green-500 rounded-full flex items-center justify-center flex-shrink-0">
+       <i data-lucide="phone" class="w-5 h-5 text-white"></i>
+      </div>
+      <div class="text-sm">
+       <div class="font-semibold text-navy">
+        Ecuador Office
+       </div>
+       <div class="text-xs text-gray-500">
+        +593 969 693 131
+       </div>
+      </div></a> <a href="https://wa.me/31642484179" target="_blank" rel="noopener noreferrer" class="flex items-center gap-3 p-3 hover:bg-green-50 rounded-lg transition-all">
+      <div class="w-10 h-10 bg-green-500 rounded-full flex items-center justify-center flex-shrink-0">
+       <i data-lucide="phone" class="w-5 h-5 text-white"></i>
+      </div>
+      <div class="text-sm">
+       <div class="font-semibold text-navy">
+        Europe Team
+       </div>
+       <div class="text-xs text-gray-500">
+        +31 642 484 179
+       </div>
+      </div></a> <a href="https://wa.me/306945555489" target="_blank" rel="noopener noreferrer" class="flex items-center gap-3 p-3 hover:bg-green-50 rounded-lg transition-all">
+      <div class="w-10 h-10 bg-green-500 rounded-full flex items-center justify-center flex-shrink-0">
+       <i data-lucide="phone" class="w-5 h-5 text-white"></i>
+      </div>
+      <div class="text-sm">
+       <div class="font-semibold text-navy">
+        Support Team
+       </div>
+       <div class="text-xs text-gray-500">
+        +30 694 555 5489
+       </div>
+      </div></a>
+    </div><button id="whatsapp-toggle" class="floating-btn w-14 h-14 bg-green-500 hover:bg-green-600 rounded-full flex items-center justify-center shadow-lg transition-all z-50">
+     <svg class="w-7 h-7 text-white" viewbox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z" />
+     </svg></button> <a href="https://www.facebook.com/profile.php?id=61576470584956" target="_blank" rel="noopener noreferrer" class="floating-btn w-14 h-14 bg-blue-600 hover:bg-blue-700 rounded-full flex items-center justify-center shadow-lg transition-all"> <i data-lucide="facebook" class="w-7 h-7 text-white"></i> </a> <a href="https://www.instagram.com/amarysia2/" target="_blank" rel="noopener noreferrer" class="floating-btn w-14 h-14 bg-gradient-to-br from-pink-500 via-red-500 to-yellow-500 hover:from-pink-600 hover:via-red-600 hover:to-yellow-600 rounded-full flex items-center justify-center shadow-lg transition-all"> <i data-lucide="instagram" class="w-7 h-7 text-white"></i> </a>
+   </div><!-- Back to Top Button --> <button id="back-to-top" class="fixed bottom-6 left-6 w-14 h-14 bg-gradient-to-br from-navy-light to-navy hover:from-emerald hover:to-teal rounded-full flex items-center justify-center shadow-xl hover:shadow-2xl transition-all opacity-0 invisible z-50 group hover:scale-110 hover:-translate-y-1"> <i data-lucide="arrow-up" class="w-6 h-6 text-white group-hover:scale-125 transition-transform"></i> </button>
+  </div>
+  <script>
+    // Default configuration
+    const defaultConfig = {
+      hero_headline: 'Professional Maritime Fumigation & Vessel Hygiene',
+      hero_subheadline: 'ISO-certified treatments and comprehensive sanitation advisory. Trusted by regional and international operators for compliant, safe vessel operations.',
+      about_title: 'Trusted Maritime Hygiene Experts in Ecuador',
+      company_description: 'Amarysia Ship Services S.A. has been providing exceptional maritime fumigation and sanitation services since 2010. Based in Esmeraldas, Ecuador, we serve vessels of all types with internationally certified treatments and comprehensive hygiene solutions.',
+      services_title: 'Comprehensive Maritime Hygiene Solutions',
+      contact_title: 'Get in Touch With Our Team',
+      footer_tagline: 'Your trusted partner for professional maritime fumigation, vessel hygiene audits, and sanitation advisory services in Ecuador and beyond.',
+      background_color: '#ffffff',
+      primary_color: '#0a2540',
+      accent_color: '#22c55e',
+      text_color: '#4b5563',
+      surface_color: '#f9fafb',
+      font_family: 'Poppins',
+      font_size: 16
+    };
+
+    // Initialize Element SDK
+    if (window.elementSdk) {
+      window.elementSdk.init({
+        defaultConfig,
+        onConfigChange: async (config) => {
+          // Update hero headline
+          const heroHeadline = document.getElementById('hero-headline');
+          if (heroHeadline) {
+            heroHeadline.textContent = config.hero_headline || defaultConfig.hero_headline;
+          }
+
+          // Update hero subheadline
+          const heroSubheadline = document.getElementById('hero-subheadline');
+          if (heroSubheadline) {
+            heroSubheadline.textContent = config.hero_subheadline || defaultConfig.hero_subheadline;
+          }
+
+          // Update about title
+          const aboutTitle = document.getElementById('about-title');
+          if (aboutTitle) {
+            aboutTitle.textContent = config.about_title || defaultConfig.about_title;
+          }
+
+          // Update company description
+          const companyDesc = document.getElementById('company-description');
+          if (companyDesc) {
+            companyDesc.textContent = config.company_description || defaultConfig.company_description;
+          }
+
+          // Update services title
+          const servicesTitle = document.getElementById('services-title');
+          if (servicesTitle) {
+            servicesTitle.textContent = config.services_title || defaultConfig.services_title;
+          }
+
+          // Update contact title
+          const contactTitle = document.getElementById('contact-title');
+          if (contactTitle) {
+            contactTitle.textContent = config.contact_title || defaultConfig.contact_title;
+          }
+
+          // Update footer tagline
+          const footerTagline = document.getElementById('footer-tagline');
+          if (footerTagline) {
+            footerTagline.textContent = config.footer_tagline || defaultConfig.footer_tagline;
+          }
+
+          // Apply font family
+          const fontFamily = config.font_family || defaultConfig.font_family;
+          document.body.style.fontFamily = `${fontFamily}, Poppins, sans-serif`;
+
+          // Apply font size scaling
+          const baseFontSize = config.font_size || defaultConfig.font_size;
+          document.documentElement.style.fontSize = `${baseFontSize}px`;
+        },
+        mapToCapabilities: (config) => ({
+          recolorables: [
+            {
+              get: () => config.background_color || defaultConfig.background_color,
+              set: (value) => window.elementSdk.setConfig({ background_color: value })
+            },
+            {
+              get: () => config.surface_color || defaultConfig.surface_color,
+              set: (value) => window.elementSdk.setConfig({ surface_color: value })
+            },
+            {
+              get: () => config.text_color || defaultConfig.text_color,
+              set: (value) => window.elementSdk.setConfig({ text_color: value })
+            },
+            {
+              get: () => config.primary_color || defaultConfig.primary_color,
+              set: (value) => window.elementSdk.setConfig({ primary_color: value })
+            },
+            {
+              get: () => config.accent_color || defaultConfig.accent_color,
+              set: (value) => window.elementSdk.setConfig({ accent_color: value })
+            }
+          ],
+          borderables: [],
+          fontEditable: {
+            get: () => config.font_family || defaultConfig.font_family,
+            set: (value) => window.elementSdk.setConfig({ font_family: value })
+          },
+          fontSizeable: {
+            get: () => config.font_size || defaultConfig.font_size,
+            set: (value) => window.elementSdk.setConfig({ font_size: value })
+          }
+        }),
+        mapToEditPanelValues: (config) => new Map([
+          ['hero_headline', config.hero_headline || defaultConfig.hero_headline],
+          ['hero_subheadline', config.hero_subheadline || defaultConfig.hero_subheadline],
+          ['about_title', config.about_title || defaultConfig.about_title],
+          ['company_description', config.company_description || defaultConfig.company_description],
+          ['services_title', config.services_title || defaultConfig.services_title],
+          ['contact_title', config.contact_title || defaultConfig.contact_title],
+          ['footer_tagline', config.footer_tagline || defaultConfig.footer_tagline]
+        ])
+      });
+    }
+
+    // Initialize Lucide icons
+    lucide.createIcons();
+
+    // Navbar scroll effect
+    const navbar = document.getElementById('navbar');
+    const navLogoText = document.getElementById('nav-logo-text');
+    
+    window.addEventListener('scroll', () => {
+      if (window.scrollY > 100) {
+        navbar.classList.add('glass-effect', 'shadow-lg');
+        navbar.classList.remove('bg-transparent');
+        navLogoText.classList.remove('text-white');
+        navLogoText.classList.add('text-emerald');
+      } else {
+        navbar.classList.remove('glass-effect', 'shadow-lg');
+        navbar.classList.add('bg-transparent');
+        navLogoText.classList.add('text-white');
+        navLogoText.classList.remove('text-emerald');
+      }
+    });
+
+    // Mobile menu toggle
+    const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+    const mobileMenu = document.getElementById('mobile-menu');
+    
+    mobileMenuBtn.addEventListener('click', () => {
+      mobileMenu.classList.toggle('hidden');
+    });
+
+    // Close mobile menu on link click
+    mobileMenu.querySelectorAll('a').forEach(link => {
+      link.addEventListener('click', () => {
+        mobileMenu.classList.add('hidden');
+      });
+    });
+
+    // WhatsApp menu toggle
+    const whatsappToggle = document.getElementById('whatsapp-toggle');
+    const whatsappMenu = document.getElementById('whatsapp-menu');
+    
+    whatsappToggle.addEventListener('click', () => {
+      whatsappMenu.classList.toggle('hidden');
+    });
+
+    // Close WhatsApp menu when clicking outside
+    document.addEventListener('click', (e) => {
+      if (!whatsappToggle.contains(e.target) && !whatsappMenu.contains(e.target)) {
+        whatsappMenu.classList.add('hidden');
+      }
+    });
+
+    // Back to top button
+    const backToTopBtn = document.getElementById('back-to-top');
+    
+    window.addEventListener('scroll', () => {
+      if (window.scrollY > 500) {
+        backToTopBtn.classList.remove('opacity-0', 'invisible');
+        backToTopBtn.classList.add('opacity-100', 'visible');
+      } else {
+        backToTopBtn.classList.add('opacity-0', 'invisible');
+        backToTopBtn.classList.remove('opacity-100', 'visible');
+      }
+    });
+
+    backToTopBtn.addEventListener('click', () => {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    });
+
+    // Contact form handling
+    const contactForm = document.getElementById('contact-form');
+    const formStatus = document.getElementById('form-status');
+    const submitBtn = document.getElementById('submit-btn');
+
+    contactForm.addEventListener('submit', (e) => {
+      e.preventDefault();
+      
+      const formData = new FormData(contactForm);
+      const name = formData.get('name');
+      const email = formData.get('email');
+      const phone = formData.get('phone');
+      const message = formData.get('message');
+
+      // Validate required fields
+      if (!name || !email || !phone || !message) {
+        formStatus.classList.remove('hidden', 'bg-emerald/10', 'text-emerald');
+        formStatus.classList.add('bg-red-100', 'text-red-600');
+        formStatus.textContent = 'Please fill in all required fields.';
+        return;
+      }
+
+      // Show loading state
+      submitBtn.disabled = true;
+      submitBtn.innerHTML = '<i data-lucide="loader-2" class="w-5 h-5 animate-spin"></i> Sending...';
+      lucide.createIcons();
+
+      // Simulate form submission
+      setTimeout(() => {
+        // Create mailto link with form data
+        const mailtoSubject = encodeURIComponent(`Contact Form: ${name}`);
+        const mailtoBody = encodeURIComponent(`Name: ${name}\nEmail: ${email}\nPhone: ${phone}\n\nMessage:\n${message}`);
+        const mailtoLink = `mailto:giannakouris@gmail.com?subject=${mailtoSubject}&body=${mailtoBody}`;
+        
+        // Open email client
+        window.open(mailtoLink, '_blank');
+
+        // Show success message
+        formStatus.classList.remove('hidden', 'bg-red-100', 'text-red-600');
+        formStatus.classList.add('bg-emerald/10', 'text-emerald');
+        formStatus.textContent = 'Thank you! Your message has been prepared. Please send the email from your mail client.';
+
+        // Reset form
+        contactForm.reset();
+        submitBtn.disabled = false;
+        submitBtn.innerHTML = '<i data-lucide="send" class="w-5 h-5"></i> Send Message';
+        lucide.createIcons();
+      }, 1000);
+    });
+  </script>
+ <script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'9da2b537e73166fd',t:'MTc3MzE0OTc4MS4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
+</html>
